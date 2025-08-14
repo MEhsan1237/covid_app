@@ -18,6 +18,7 @@ class _SplashscreenState extends State<SplashScreen>
     duration: Duration(seconds: 3),
     vsync: this,
   )..repeat();
+
   @override
   void dispose() {
     // TODO: implement dispose
@@ -45,7 +46,8 @@ class _SplashscreenState extends State<SplashScreen>
         backgroundColor: Colors.black,
 
         body: Column(
-          mainAxisAlignment: MainAxisAlignment.center, crossAxisAlignment:  CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             AnimatedBuilder(
               animation: _controller,
@@ -56,16 +58,21 @@ class _SplashscreenState extends State<SplashScreen>
                 );
               },
               child: SizedBox(
+                width: 100,
+                height: 100,
+                child: Center(
+                  child: Image(
+                    image: AssetImage("assets/images/real_virus.jpg"),
 
-                width: 50,
-                child: Center(child: Image.asset("images/virus.two.jpg",fit: BoxFit.cover,width: 100,height: 100,)),
+                  ),
+                ),
               ),
             ),
-            SizedBox(height: 90,),
+            SizedBox(height: 40),
             Center(
               child: Text(
                 textAlign: TextAlign.center,
-                "Covid 19\nBig Virus",
+                "Covid 19\nGlobal Cases Live",
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 20,

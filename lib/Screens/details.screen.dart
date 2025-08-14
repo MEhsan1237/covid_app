@@ -38,7 +38,7 @@ final  String name,image;
       appBar: AppBar(centerTitle: true,
         leading: IconButton(onPressed:(){
           Navigator.pop(context);
-        },icon: Icon(Icons.arrow_back_rounded,size: 18,),highlightColor: Colors.deepPurpleAccent,),
+        },icon: Icon(Icons.arrow_back_ios_outlined,size: 18,),highlightColor: Colors.deepPurpleAccent,),
         backgroundColor: Colors.blue,
         title: Center(
         child: Text(

@@ -64,8 +64,8 @@ class _MainScreenState extends State<MainScreen>
                               chartRadius: MediaQuery.of(context).size.width * 0.25,
                               animationDuration: Duration(milliseconds: 1000),
                               chartType: ChartType.ring,
-                              ringStrokeWidth: 15,
-                              chartLegendSpacing: 80,
+                              ringStrokeWidth: 12,
+                              chartLegendSpacing: 100,
                               colorList: cList,
                               legendOptions: LegendOptions(
                                 legendPosition: LegendPosition.left,
